@@ -214,12 +214,14 @@
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
             this.logoutToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
             this.logoutToolStripMenuItem.Text = "Logout";
+            this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
             // 
             // exitApplicationToolStripMenuItem
             // 
             this.exitApplicationToolStripMenuItem.Name = "exitApplicationToolStripMenuItem";
             this.exitApplicationToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
             this.exitApplicationToolStripMenuItem.Text = "Exit Application";
+            this.exitApplicationToolStripMenuItem.Click += new System.EventHandler(this.exitApplicationToolStripMenuItem_Click);
             // 
             // frmPurchaseDiscountedItem
             // 

@@ -60,5 +60,17 @@ namespace CashierApplication
         {
             Application.Exit();
         }
+
+        private void exitApplicationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmLoginAccount frmLoginAccount = new frmLoginAccount();
+            frmLoginAccount.Show();
+        }
     }
 }

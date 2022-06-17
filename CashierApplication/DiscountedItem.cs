@@ -15,17 +15,19 @@ namespace CashierApplication
         public DiscountedItem(String name, double price, int quantity, double discount) : base(name, price, quantity)
         {
             this.item_discount = discount;
+            
         }
 
-        public new double getTotalPrice()
+        public override double getTotalPrice()
         {
-            double currentprice = base.returnTotalPrice();
+            
+            double currentprice = returnTotalPrice();
 
             discounted_price = currentprice * (item_discount / 100);
             return currentprice - discounted_price;
         }
 
-        public new void setPayment(double amount)
+        public override void setPayment(double amount)
         {
             this.payment_amount = amount;
         }

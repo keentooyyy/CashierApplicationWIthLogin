@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CashierApplication
 {
-    internal class Item
+    abstract class Item
     {
         protected String item_name;
         protected double item_price;
@@ -20,20 +20,13 @@ namespace CashierApplication
             this.quantity = quantity;
         }
 
-        public void getTotalPrice()
-        {
-            total_price = item_price * quantity;
+        public abstract double getTotalPrice();
 
-        }
         public double returnTotalPrice()
         {
-            getTotalPrice();
+            total_price = item_price * quantity;
             return total_price;
         }
-        public void setPayment(double amount)
-        {
-            DiscountedItem discountedItem = new DiscountedItem(item_name,item_price,quantity,0);
-            discountedItem.setPayment(amount);
-        }
+        public abstract void setPayment(double amount);
     }
 }
