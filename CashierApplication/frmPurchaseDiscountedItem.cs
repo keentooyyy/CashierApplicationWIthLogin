@@ -55,5 +55,10 @@ namespace CashierApplication
 
             ChangeAmountText = discountedItem.getChange().ToString();
         }
+
+        private void onClose(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

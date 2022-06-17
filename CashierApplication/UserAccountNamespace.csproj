@@ -62,6 +62,9 @@
     <Compile Include="Item.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmLoginAccount.resx">
+      <DependentUpon>frmLoginAccount.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPurchaseDiscountedItem.resx">
       <DependentUpon>frmPurchaseDiscountedItem.cs</DependentUpon>
     </EmbeddedResource>

@@ -16,5 +16,12 @@ namespace CashierApplication
         {
             InitializeComponent();
         }
+
+        private void LoginButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmPurchaseDiscountedItem frmPurchaseDiscountedItem = new frmPurchaseDiscountedItem();
+            frmPurchaseDiscountedItem.ShowDialog();
+        }
     }
 }
